@@ -1,0 +1,109 @@
+:root {
+  --bg: #0f172a;
+  --bg-soft: #1e293b;
+  --text: #f8fafc;
+  --muted: #cbd5e1;
+  --accent: #22d3ee;
+  --card: #111827;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.5;
+  color: var(--text);
+  background: linear-gradient(160deg, var(--bg), #020617 70%);
+}
+
+.hero {
+  padding: 4.5rem 1.25rem 3rem;
+}
+
+.hero__content {
+  margin: 0 auto;
+  max-width: 760px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  margin-bottom: 0.8rem;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--accent);
+  color: #082f49;
+  text-decoration: none;
+  padding: 0.7rem 1.1rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+}
+
+main {
+  padding: 1rem 1.25rem 3rem;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.benefits,
+.steps {
+  margin-top: 2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid #334155;
+  border-radius: 0.8rem;
+  padding: 1rem;
+}
+
+.card p,
+.steps li,
+.hero p {
+  color: var(--muted);
+}
+
+.steps ol {
+  padding-left: 1.2rem;
+}
+
+.steps li + li {
+  margin-top: 0.65rem;
+}
+
+footer {
+  border-top: 1px solid #334155;
+  padding: 1.2rem;
+  text-align: center;
+  color: var(--muted);
+}
